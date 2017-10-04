@@ -1,5 +1,9 @@
 # NSC
 
+## status
+
+![travis](https://travis-ci.org/wit543/genesis_nsc.svg?branch=master)
+
 ## Part
 - dataset
 - String hashing
