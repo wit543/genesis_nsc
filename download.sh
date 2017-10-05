@@ -4,7 +4,7 @@ wget -nc https://doc-10-54-docs.googleusercontent.com/docs/securesc/klheki7p3bcp
 wget -nc https://dl.dropboxusercontent.com/content_link/gzvteOhDkxEHjQh6SlRwK5ZxCy4COXUvBnC4NnnZQmAYIsFkrn8KEJF52FV3jvnx/file?dl=1
 # Clone word2Vec
 echo "Clone word2vec"
-git clone hhttps://github.com/dav/word2vec.git
+git clone https://github.com/dav/word2vec.git
 # Download Fast Text pretrain model
 echo "Download Fasttext pretrain model"
 wget -nc https://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.th.zip
