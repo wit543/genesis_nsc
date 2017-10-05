@@ -6,4 +6,3 @@ pythai
 gensim
 cython
 sklearn
- 
