@@ -1,5 +1,0 @@
-nltk
-regex
-lxml
-numpy
-pythai
