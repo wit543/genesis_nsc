@@ -2,3 +2,7 @@
 *.exe
 fastText
 word2vec
+word2vec-api
+wordvectors
+tmp
+
