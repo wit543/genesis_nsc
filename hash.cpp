@@ -1,21 +1,24 @@
-// hash example
 #include <iostream>
-#include <functional>
+#include <windows.h>
 #include <string>
+#include <functional>
+using namespace std;
 
-int main ()
+#define A 54059 /* a prime */
+#define B 76963 /* another prime */
+#define C 86969 /* yet another prime */
+#define FIRSTH 37 /* also prime */
+unsigned hash_str(const char* s)
 {
-  char nts1[] = "Test";
-  char nts2[] = "Test";
-  std::string str1 (nts1);
-  std::string str2 (nts2);
+   unsigned h = FIRSTH;
+   while (*s) {
+     h = (h * A) ^ (s[0] * B);
+     s++;
+   }
+   return h; // or return h % C;
+}
 
-  std::hash<char*> ptr_hash;
-  std::hash<std::string> str_hash;
-
-  std::cout << "same hashes:\n" << std::boolalpha;
-  std::cout << "nts1 and nts2: " << (ptr_hash(nts1)==ptr_hash(nts2)) << '\n';
-  std::cout << "str1 and str2: " << (str_hash(str1)==str_hash(str2)) << '\n';
-
-  return 0;
+int main() {
+    cout << hash_str("aaa");
+    return 0;
 }
