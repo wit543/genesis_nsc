@@ -3,3 +3,6 @@ regex
 lxml
 numpy
 pythai
+gensim
+cython
+sklearn
